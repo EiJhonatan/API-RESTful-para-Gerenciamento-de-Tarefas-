@@ -1,0 +1,11 @@
+[package]
+name = "task_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.6"  # Framework web
+tokio = { version = "1", features = ["full"] }  # Executor assíncrono
+serde = { version = "1", features = ["derive"] }  # Serialização e deserialização
+serde_json = "1.0"  # Formato JSON
+sqlx = { version = "0.7", features = ["sqlite", "runtime-tokio-native-tls"] }  # Conexão com SQLite
